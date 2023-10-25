@@ -1,3 +1,69 @@
+<section id="info-section">
+  <div class="custom-container">
+    <div class="info-item">
+      <img src="https://iili.io/JFtqhes.png" alt="">
+      <p>Elegí los productos que
+<br>vas a comprar</p>
+    </div>
+    <div class="info-item">
+      <img src="https://iili.io/JFtqOX4.png" alt="">
+      <p>Pagá con el medio de
+<br> pago que quieras</p>
+    </div>
+    <div class="info-item">
+      <img src="https://iili.io/JFtqX7n.png" alt="">
+      <p>Recibí el producto
+<br>que esperás</p>
+    </div>
+  </div>
+</section>
+<section id="marcas-section">
+  <div class="Busca-Marca">
+  <img id= "adorno-titulo" src="https://iili.io/JFtWD6Q.png" alt="">
+  <h2 class="section-category__title font-primary-text" >MARCAS DESTACADAS</h2>
+  </div>
+  <div class="marcas-section-container">
+    <div class="marcas-section-button">
+      <img id="marcas-section-button-izq" src="https://iili.io/JFtqNIf.png" alt="flecha-izq">
+    </div>
+    <div class="marcas-section-carrusel">
+      <div class="marcas-section-carrusel-container">
+        <div class="marcas-section-marcas">
+          <img src="https://iili.io/JFtqEqN.png" alt="">
+        </div>
+          <div class="marcas-section-marcas">
+          <img src="https://iili.io/JFtqlXR.png" alt="">
+        </div>
+          <div class="marcas-section-marcas">
+          <img src="https://iili.io/JFtq0sp.png" alt="">
+        </div>
+          <div class="marcas-section-marcas">
+          <img src="https://iili.io/JFtqMgt.png" alt="">
+        </div>
+          <div class="marcas-section-marcas">
+          <img src="https://iili.io/JFtqWdX.png" alt="">
+        </div>
+         <div class="marcas-section-marcas">
+          <img src="https://iili.io/JKJKA92.png" alt="">
+        </div>
+         <div class="marcas-section-marcas">
+          <img src="https://iili.io/JKJKzFf.png" alt="">
+        </div>
+         <div class="marcas-section-marcas">
+          <img src="https://iili.io/JKJKIa4.png" alt="">
+        </div>
+         <div class="marcas-section-marcas">
+          <img src="https://iili.io/JKJBtUJ.png" alt="">
+        </div>
+        </div>
+
+    </div>
+
+      <div class="marcas-section-button">
+        <img id="marcas-section-button-der" src="https://iili.io/JFtqNIf.png" alt="flecha-der">
+      </div>
+  
+</section>
 <div id="footer-container">
 {{#if subscriptionFooter.active}}
   {{> fashion/views/partials/suscription}}
@@ -5,12 +71,13 @@
 <footer>
   <div class="fashion-nav-footer-contact">
     <div class="fashion-nav-footer-contact__content header--custom-background">
+    
       <div class="nav-bounds nav-bounds--contact {{#if interestLinks}} fashion-nav-footer--with-links-pages {{/if}}">
         <div class="fashion-nav-footer__brand-col header--custom-text">
           {{#if logo}}
           <a class="nav-fashion-header__logo" href="/" id="logo-wrapper">
             <span class="nav-header__title-hidden">{{name}}</span>
-            <img class="nav-header__image" src="{{logo}}" alt="{{name}}" itemprop="logo" />
+            <img class="nav-header__image-footers" src="https://iili.io/JFDqbSt.png" alt="{{name}}" itemprop="logo" />
           </a>
           {{else}}
           <h3 class="nav-footer-contact-title header--custom-text">
@@ -34,6 +101,16 @@
         <div class="fashion-nav-footer__categories-col-container header--custom-border">
           <div class="fashion-nav-footer__categories-title-container">
             <h4 class="fashion-nav-footer__categories-title header--custom-text">{{dropdown_title_text}}</h4>
+             <p><a class="categorias-footer-custom"
+                      href="/">Zapatillas</a></p>
+                  <p><a class="categorias-footer-custom"
+                      href="/">Botines</a></p>
+                  <p><a class="categorias-footer-custom"
+                      href="/">Ropa deportiva</a></p>
+                       <p><a class="categorias-footer-custom"
+                      href="/">Mas categorias</a></p>
+                      <br>
+                    
             <div class="fashion-nav-footer__categories-title__icon-down">
               {{> fashion/views/partials/icons/dropdown}}
             </div>
@@ -42,6 +119,23 @@
             </div>
           </div>
           <div class="fashion-nav-footer__categories-col header--custom-border">
+              <div>
+                      <h4>CONTACTO</h4>
+                      <li class="contact-phone-number">
+              <a class="header--custom-text" itemprop="telephone" href="tel:{{phone.raw}}" rel="nofollow">Tel:
+                {{phone.formatted}}</a>
+            </li>
+             <li class="contact-mail">
+              <a class="header--custom-text" itemprop="email" href="mailto:{{email}}" rel="nofollow">{{email}}</a>
+            </li>
+              {{#with address}}
+            <li>
+              <span class="header--custom-text" itemprop="streetAddress">{{address}}</span>
+              <span class="header--custom-text" itemprop="addressLocality">{{city}}</span>
+              <span class="header--custom-text" itemprop="addressRegion">{{state}}</span>
+            </li>
+            {{/with}}
+            </div>
             {{#each menu}}
               <span class="fashion-nav-footer__category">
                 <a href="{{url}}" data-id="{{id}}" class="header--custom-text">
@@ -91,24 +185,24 @@
           {{/if}}
           {{#if showContact}}
           <ul class="fashion-nav-footer__contact header--custom-border">
-            {{#if showPhone}}
-            <li class="contact-phone-number">
+            {{#if showPhone}} 
+            {{!-- <li class="contact-phone-number">
               <a class="header--custom-text" itemprop="telephone" href="tel:{{phone.raw}}" rel="nofollow">Tel:
                 {{phone.formatted}}</a>
-            </li>
+            </li> --}}
             {{/if}}
             {{#if showEmail}}
-            <li class="contact-mail">
+           {{!--  <li class="contact-mail">
               <a class="header--custom-text" itemprop="email" href="mailto:{{email}}" rel="nofollow">{{email}}</a>
-            </li>
+            </li> --}}
             {{/if}}
             {{#if showAddress}}
             {{#with address}}
-            <li>
+            {{!-- <li>
               <span class="header--custom-text" itemprop="streetAddress">{{address}}</span>
               <span class="header--custom-text" itemprop="addressLocality">{{city}}</span>
               <span class="header--custom-text" itemprop="addressRegion">{{state}}</span>
-            </li>
+             </li>  --}}
             {{/with}}
             {{/if}}
             <meta itemprop="contactType" content="customer service" />
@@ -135,6 +229,7 @@
                 {{#if linkToLGPD}}
                   <a href="{{linkToLGPD.href}}" class="header--custom-text">{{linkToLGPD.label}}</a>
                 {{/if}}
+                  <a href="https://galarreta.co" target="_blank">Developed by Galarreta</a>
               </div>
               {{#if showBusinessData}}
                 {{#with fiscalData}}

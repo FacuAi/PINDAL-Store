@@ -2367,14 +2367,12 @@ a,a:hover,a:link,a:visited {
     }
 
     .nav-header__image {
-        justify-content: center;
-        position: fixed;
-        left: 13%;
-        top: 26px;
-        height: 24px;
-        position: relative;
-        width: 24px;
-        display: block !important
+    left: 13%;
+    top: 14px;
+    height: auto;
+    position: relative;
+    width: 123px;
+    display: block !important;
     }
 
     .submenu-1 img {
