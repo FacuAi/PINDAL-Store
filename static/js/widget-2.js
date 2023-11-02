@@ -1,4 +1,5 @@
-// Configuración del carrusel
+// Configuración del carrusel--
+
 const carrusel = document.querySelector('.marcas-section-carrusel-container');
 const izqBtn = document.getElementById('marcas-section-button-izq');
 const derBtn = document.getElementById('marcas-section-button-der');
