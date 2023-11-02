@@ -653,7 +653,6 @@ input[data-js=attributes-toggle]:checked+.toggle-menu span:nth-child(2) {
 
 .fashion-nav-footer .nav-bounds {
     border-color: #fff;
-    border-top: 1px solid;
     max-width: 100%;
     padding: 0 24px
 }
@@ -1671,15 +1670,10 @@ input[data-js=attributes-toggle]:checked+.toggle-menu span:nth-child(2) {
     }
 
     .fashion-nav-footer__categories-col {
-        align-content: flex-start;
-        border: 0;
         display: flex;
-        flex: 1;
         flex-direction: column;
         flex-wrap: wrap;
         height: 156px;
-        max-width: 384px;
-        padding: 0
     }
 
     .fashion-nav-footer__categories-col .fashion-nav-footer__category {
@@ -1759,8 +1753,9 @@ input[data-js=attributes-toggle]:checked+.toggle-menu span:nth-child(2) {
     }
 
     .nav-footer-about {
-        display: block;
-        text-align: left
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
     }
 
     .nav-footer-about p,
@@ -2372,8 +2367,8 @@ a:visited {
 }
 
 #adorno-titulo {
-    width: 5%;
-    margin-left: 39%;
+    width: 75px;
+    margin-left: 31rem;
     margin-top: -13px;
 
 }
@@ -2655,9 +2650,9 @@ a:visited {
         margin-left: 2%
     }
 
-    #flecha-mobile-genero {
+    /* #flecha-mobile-genero {
         transform: rotate(90deg)
-    }
+    } */
 
     .menu {
         display: none
@@ -2713,12 +2708,11 @@ a:visited {
         color: black
     }
 
-    .sub__categorias a,
-    li {
+    .sub__categorias a, li {
         text-decoration: none;
         color: black;
         display: block;
-        padding: 5px 0;
+       
         transition: background-color .2s
     }
 
@@ -2926,7 +2920,7 @@ section.footer-segunda-section {
         display: inline;
         font-weight: 600;
         text-transform: uppercase;
-        color: #4575d9
+        color: #e4007e
     }
 
     .categoria-new-mb p {
@@ -2972,8 +2966,9 @@ section.footer-segunda-section {
         font-size: 17px;
         display: inline;
         color: #000 !important;
-        margin-top: 20px;
-        margin-left: -65px;
+        /* margin-top: 20px;
+        margin-left: -65px; */
+        margin: 0.9rem;
     }
     .nav-tools-footer__contact{
         display: flex;
